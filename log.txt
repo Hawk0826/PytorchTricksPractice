@@ -1,0 +1,29 @@
+Epoch: 1 |  2000 | loss: 2.202
+Epoch: 1 |  4000 | loss: 1.865
+Epoch: 1 |  6000 | loss: 1.700
+Epoch: 1 |  8000 | loss: 1.602
+Epoch: 1 | 10000 | loss: 1.533
+Epoch: 1 | 12000 | loss: 1.472
+Epoch:tensor([2.6747, 4.5788, 1.4572, 5.2872]) | Accuracy of the network on the 10000 test images: 47.29%
+Epoch: 2 |  2000 | loss: 1.408
+Epoch: 2 |  4000 | loss: 1.365
+Epoch: 2 |  6000 | loss: 1.349
+Epoch: 2 |  8000 | loss: 1.324
+Epoch: 2 | 10000 | loss: 1.312
+Epoch: 2 | 12000 | loss: 1.283
+Epoch:tensor([3.5726, 4.2506, 1.6821, 7.5443]) | Accuracy of the network on the 10000 test images: 53.77%
+Epoch:tensor([3.5726, 4.2506, 1.6821, 7.5443]) | Accuracy of the network on the 10000 test images: 53.77%
+Epoch: 1 |  2000 | loss: 2.254
+Epoch: 1 |  4000 | loss: 1.887
+Epoch: 1 |  6000 | loss: 1.669
+Epoch: 1 |  8000 | loss: 1.565
+Epoch: 1 | 10000 | loss: 1.494
+Epoch: 1 | 12000 | loss: 1.466
+Epoch: 1 | Accuracy of the network on the 10000 test images: 47.54%
+Epoch: 2 |  2000 | loss: 1.391
+Epoch: 2 |  4000 | loss: 1.373
+Epoch: 2 |  6000 | loss: 1.348
+Epoch: 2 |  8000 | loss: 1.349
+Epoch: 2 | 10000 | loss: 1.324
+Epoch: 2 | 12000 | loss: 1.283
+Epoch: 2 | Accuracy of the network on the 10000 test images: 55.43%
