@@ -127,6 +127,7 @@ import torch.nn.functional as F
 def write_in_log(log):
     with open("log.txt", 'a') as f:
         f.write(log + '\n')
+        print(log)
     pass
 
 class Net(nn.Module):
@@ -190,7 +191,7 @@ optimizer = optim.SGD(net.parameters(), lr=LR, momentum=MOMENTUM)  # !!!!!!!!!�
 # We simply have to loop over our data iterator, and feed the inputs to the
 # network and optimizer.
 
-for epoch in range(2):  # loop over the dataset multiple times
+for epoch in range(EPOCH):  # loop over the dataset multiple times
 
     running_loss = 0.0
     #   enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，
@@ -213,7 +214,6 @@ for epoch in range(2):  # loop over the dataset multiple times
         if i % 2000 == 1999:    # print every 2000 mini-batches
             loss_log = 'Epoch:{:2d} | {:5d} | loss: {:.3f}'.format(epoch + 1, i + 1, running_loss / 2000)
             write_in_log(loss_log)
-            print(loss_log)
             running_loss = 0.0
 
     correct = 0
@@ -226,9 +226,8 @@ for epoch in range(2):  # loop over the dataset multiple times
             total += labels_test.size(0)
             correct += (predicted == labels_test).sum().item()
 
-    accuracy = 'Epoch:{:2d} | Accuracy of the network on the 10000 test images: {:.2f}%'.format(epoch + 1, (100 * correct / total))
+    accuracy = 'Epoch:{:2d} | Accuracy of the network on the 10000 test images: {:.2f}%\n'.format(epoch + 1, (100 * correct / total))
     write_in_log(accuracy)
-    print(accuracy)
 
 print('Finished Training')
 
